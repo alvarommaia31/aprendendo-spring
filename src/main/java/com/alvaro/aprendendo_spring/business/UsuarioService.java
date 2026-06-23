@@ -5,7 +5,6 @@ import com.alvaro.aprendendo_spring.infrastruture.exceptions.ConflictException;
 import com.alvaro.aprendendo_spring.infrastruture.exceptions.ResourceNotFoundException;
 import com.alvaro.aprendendo_spring.infrastruture.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +12,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 
 public class UsuarioService {
+
 
     private final UsuarioRepository usuarioRepository;
     private final PasswordEncoder passwordEncoder;
